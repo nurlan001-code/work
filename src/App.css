@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.app {
+  background: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app.dark {
+  background: #121212;
+  color: #eee;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007BFF;
+  color: white;
+  padding: 15px 30px;
+}
+
+.header-buttons button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signin {
+  background: #28a745;
+  color: white;
+}
+
+/* Section */
+.section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 180px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.app.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
